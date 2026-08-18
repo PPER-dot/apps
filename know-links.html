@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KNOWLIMITS | Nástroje</title>
+<style>
+  :root {
+    --green: #6EAA46;
+    --black: #000000;
+    --dark: #5C5C5C;
+    --light: #ffffff;
+    --light-gray: #858585;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--black);
+    color: var(--light);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px 64px;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .logo-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--green);
+    color: var(--black);
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--light);
+    letter-spacing: 0.5px;
+  }
+
+  header p {
+    color: var(--light-gray);
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  section {
+    margin-bottom: 36px;
+  }
+
+  .section-title {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--green);
+    margin-bottom: 14px;
+    padding-left: 4px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  a.card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #141414;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 16px 18px;
+    text-decoration: none;
+    color: var(--light);
+    transition: border-color 0.15s ease, transform 0.15s ease, background 0.15s ease;
+  }
+
+  a.card:hover {
+    border-color: var(--green);
+    background: #191c17;
+    transform: translateY(-2px);
+  }
+
+  a.card:active {
+    transform: translateY(0);
+  }
+
+  .badge {
+    flex: 0 0 auto;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--light);
+  }
+
+  a.card:hover .badge {
+    background: var(--green);
+    color: var(--black);
+  }
+
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .card-title {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .card-sub {
+    font-size: 12px;
+    color: var(--light-gray);
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 12px;
+    color: var(--light-gray);
+  }
+
+  footer a {
+    color: var(--light-gray);
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="logo-mark">KL</div>
+      <h1>KNOWLIMITS</h1>
+      <p>Formátové a marketingové nástroje</p>
+    </header>
+
+    <section>
+      <div class="section-title">Formáty</div>
+      <div class="links">
+        <a class="card" href="https://ai.studio/apps/a277456b-8002-4ecb-8641-c2a7d9447e4c?fullscreenApplet=true" target="_blank" rel="noopener">
+          <div class="badge">3D</div>
+          <div class="card-text">
+            <div class="card-title">3D Cube</div>
+            <div class="card-sub">DV360 & Adform</div>
+          </div>
+        </a>
+
+        <a class="card" href="https://ai.studio/apps/353c6f26-adbf-4e14-905b-dcfea421b08d?fullscreenApplet=true" target="_blank" rel="noopener">
+          <div class="badge">BA</div>
+          <div class="card-text">
+            <div class="card-title">Barusel</div>
+            <div class="card-sub">SkyShop</div>
+          </div>
+        </a>
+
+        <a class="card" href="https://ai.studio/apps/95abf9a4-8f89-4cfb-9b64-06fdde062e9f?fullscreenApplet=true" target="_blank" rel="noopener">
+          <div class="badge">VB</div>
+          <div class="card-text">
+            <div class="card-title">Videobanner</div>
+            <div class="card-sub">HTML5 banner editor</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Ostatní</div>
+      <div class="links">
+        <a class="card" href="https://ai.studio/apps/325f3340-3567-40c3-8b35-112937fbb469?fullscreenApplet=true" target="_blank" rel="noopener">
+          <div class="badge">NL</div>
+          <div class="card-text">
+            <div class="card-title">Newsletter</div>
+            <div class="card-sub">Know</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      KNOWLIMITS Group
+    </footer>
+  </div>
+</body>
+</html>
